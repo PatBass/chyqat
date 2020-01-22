@@ -1,0 +1,25 @@
+{% extends "APPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+    Lecture d'une annonce - {{ parent() }}
+{% endblock %}
+
+{% block platform_body %}
+    <div class="container">
+        <div class="row">
+            {% if not orderandProduct.productsList.empty %}
+                <p>
+                    Voici le contenu des commandes qui ont été faites :
+                    {% for order in orderandProduct.productsOrder %}
+                    <ul>
+                        <li>
+                            {{ order }} :
+                            <ul>
+                                <li>{{  }}</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+        </div>
+    </div>
+{% endblock %}

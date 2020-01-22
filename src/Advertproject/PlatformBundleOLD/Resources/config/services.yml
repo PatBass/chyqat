@@ -1,0 +1,50 @@
+services:
+    ap_platform.antispam:
+        class: Advertproject\PlatformBundle\Antispam\APAntispam
+        arguments: [@mailer, 50]
+        tags:
+            - { name: twig.extension }
+        calls:
+            - [ setLocale, [%locale%] ]
+
+    ap_platform.doctrine.notification:
+        class:     Advertproject\PlatformBundle\DoctrineListener\ApplicationNotification
+        arguments: [@mailer]
+        tags:
+            - { name: doctrine.event_listener, event: postPersist }
+
+    ap_platform.validator.antiflood:
+        class:     Advertproject\PlatformBundle\Validator\AntifloodValidator
+        arguments: [@request_stack, @doctrine.orm.entity_manager]
+        tags:
+            - { name: validator.constraint_validator, alias: ap_platform_antiflood }
+
+    ap_platform.form.ckeditor:
+        class:     Advertproject\PlatformBundle\Form\Type\CkeditorType
+        tags:
+            - { name: form.type, alias: ckeditor }
+
+ #   ap_platform.beta.html:
+ #       class:     Advertproject\PlatformBundle\Beta\BetaHTML
+
+ #   ap_platform.beta.listener:
+#        class:     Advertproject\PlatformBundle\Beta\BetaListener
+ #       arguments: [@ap_platform.beta.html, "2015-12-15"]
+ #       tags:
+ #           - { name: kernel.event_listener, event: kernel.response, method: processBeta }
+
+    ap_platform.censorship_processor:
+        class:     Advertproject\PlatformBundle\Bigbrother\CensorshipProcessor
+        arguments: [@mailer]
+
+    ap_platform.censorhip_listener:
+        class:     Advertproject\PlatformBundle\Bigbrother\CensorshipListener
+        arguments: [@ap_platform.censorship_processor, [1, 2, 3]]
+        tags:
+            - { name: kernel.event_listener, event: ap_platform.bigbrother.post_message, method: processMessage }
+
+    ap_platform.advert_purger:
+        class:     Advertproject\PlatformBundle\Purger\AdvertPurger
+        arguments: [@mailer, @doctrine.orm.entity_manager]
+
+

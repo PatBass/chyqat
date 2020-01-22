@@ -1,0 +1,15 @@
+
+    <ul class="nav nav-pills nav-stacked" id="myTab">
+        {% for advert in listAdverts %}
+            <li>
+                <a data-toggle="tab" href="{{ path('ap_platform_view', {'id':advert.id}) }}">{{ advert.title }}</a>
+            </li>
+            <div class="tab-content">
+                <div class="tab-pane fade active in" id={{ advert.title }}>
+                    {{ advert.content }}
+                </div>
+            </div>
+        {% endfor %}
+
+    </ul>
+

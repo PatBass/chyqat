@@ -1,0 +1,275 @@
+{% extends "APPlatformBundle::layout.html.twig" %}
+{% block title %}Lelo to zo pona{% endblock %}
+{% block platform_body %}
+    {% block header %}
+        <br><br>
+    {% endblock %}
+    {% block carousel %}
+        
+    {% endblock %}
+    {% block content %}
+        <div class="container" style="background-color:lightgrey;">
+            <br><br>
+    <div style="color: #000;">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-4 pull-left">
+                Mboté na yo ndeko !<br />
+                Na moni ké email na yo eza : {{ app.session.get('votant') }}
+            </div>
+            <div class="col-sm-offset-1 col-sm-4 pull-right">
+                <a href="{{ path('deconnexion') }}"><i class="glyphicon glyphicon-log-out"></i> Déconnexion</a>
+            </div>
+        </div>
+
+        <br><br><br><br>
+{% if  app.session.get('votant')  %}
+
+
+</div>
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-8">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        {% if app.session.flashbag.has('mbalamoko') %}
+                            <div class="alert alert-danger">
+                                <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                                {% for message in app.session.flashbag.get('mbalamoko') %}
+                                    <p><i class="glyphicon glyphicon-alert"></i> {{ message }}</p>
+                                {% endfor %}
+                            </div>
+                        {% elseif app.session.flashbag.has('votesaved') %}
+                            <div class="alert alert-success">
+                                <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                                {% for message in app.session.flashbag.get('votesaved') %}
+                                    <p><i class="glyphicon glyphicon-ok"></i> {{ message }}</p>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-9">
+                    <div class="panel panel-info">
+                        <div class="panel-heading" style="text-align: center;">
+                            <h3 class="panel-title">Tous les candidats, tous postes confondus</h3>
+                        </div>
+                        <div class="panel-body" style="text-align: left;color: black;">
+                            <h3>I- Les postes à la Coordination Générale </h3><br>
+                            <ul>
+                                <li><strong>Coordonnateur Général :</strong> Patrice Ndoundoulou, CG1, CG2</li>
+                                <li><strong>Coordonnateur Général Adjoint :</strong> Patrice Ndoundoulou, CGA1, CGA2</li>
+                                <li><strong>Secrétaire Général :</strong> Jude Bakoula, SG1, SG2</li>
+                                <li><strong>Secrétaire Général Adjoint :</strong> SGA1, SGA2</li>
+                                <li><strong>Secrétaire en charge de la coopération multilatérale :</strong> Packo Ngala, SCM1, SCM2</li>
+                                <li><strong>Le Trésorier :</strong> Gilles Moukissi, Tr1, Tr2</li>
+                            </ul>
+                            <br />
+                            <h3>II- Les postes au Conseil de Coordination </h3>
+                            <ul>
+                                <li><strong>1er Conseiller :</strong> Bertrand Akouabossi, Prénom11 Nom11, Prénom12 Nom12</li>
+                                <li><strong>Conseiller :</strong> Gabrielle ANTA YACA, Ravel THOMBET, Prénom1 Nom1</li>
+                                <li><strong>Conseiller :</strong> Prénom2 Nom2, Prénom3 Nom3, Prénom4 Nom4 </li>
+                                <li><strong>Conseiller :</strong> Prénom5 Nom5, Prénom6 Nom6, Prénom7 Nom7</li>
+                                <li><strong>Conseiller :</strong> Prénom8 Nom8, Prénom9 Nom9, Prénom10 Nom10</li>
+                            </ul>
+                            <br />
+                            <br />
+                            {#
+                            <p>
+                                <strong>N.B :</strong> Comme vous pouvez le remarquer seul le poste de Conseiller au CC dispose de plus d'un candidat.
+                                De ce fait, le vote se fait uniquement pour ce poste
+                            </p>
+                            #}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-9">
+                    <form action="{{ path('tokevote') }}" method="post">
+                        {{ form_errors(form) }}
+                        <div class="panel panel-info ">
+                            <div class="panel-heading" style="text-align: center;">
+                                <h3 class="panel-title">Lelo eyindi ! To zo pona ba kambi ya AAERCOM</h3>
+                            </div>
+
+                            <div class="panel-body" style="text-align: left;color: black;">
+                                <div class="panel panel-info ">
+                                    <div class="panel-heading" style="text-align: center;">
+                                        <h3 class="panel-title">Lelo eyindi ! To zo pona ba kambi Coordination Générale ya AAERCOM</h3>
+                                    </div>
+                                    <div class="panel-body" style="text-align: left;color: black;">
+                                        <div class="row">
+                                            <div class="col-sm-3"></div>
+                                            <div class="col-sm-3"></div>
+                                            <div class="col-sm-3"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3"></div>
+                                            <div class="col-sm-3"></div>
+                                            <div class="col-sm-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-info ">
+                                    <div class="panel-heading" style="text-align: center;">
+                                        <h3 class="panel-title">Lelo eyindi ! To zo pona ba kambi ya Conseil de Coordination ya AAERCOM</h3>
+                                    </div>
+                                    <div class="panel-body" style="text-align: left;color: black;">
+                                        <div class="row">
+                                            <div class="col-sm-3"></div>
+                                            <div class="col-sm-3"></div>
+                                            <div class="col-sm-3"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3"></div>
+                                            <div class="col-sm-3"></div>
+                                            <div class="col-sm-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <form action="{{ path('tokevote') }}" method="post">
+                                    {{ form_errors(form) }}
+                                    <div class="col-sm-12">
+                                        {{ form_widget(form.proposition,  {'attr': { 'title':'Pona oyo olingi'}}) }}
+                                        <p class="help-block text-danger" style="color: red;">{{ form_errors(form.proposition) }}</p>
+
+
+
+                                        <div class="form-group">
+                                            <button id="btn" class="btn btn-success"  type="submit">Tinda vote na yo</button>
+
+                                        </div>
+                                    </div>
+                                    {{form_rest(form)}}
+                                </form>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        <br><br>
+        <br><br>
+        <div class="row" id="results-div" data-results="{{ listChoix|json_encode }}">
+            {# {% if app.session.get('votant') in cj %} $votantOld #}
+            {% if votantOld is not null and votantOld.hasVoted == 1 %}
+                <div class="col-sm-offset-2 col-sm-9">
+                    <table class="table table-striped table-condensed">
+                        <caption>
+                            <h4>Les résultats en temps réel (<span style="color:blue;">{{total}}</span> personnes ont voté sur 41 inscrits au total!)</h4>
+                        </caption>
+                        <thead>
+                        <tr>
+                            <th>Candidats</th>
+                            <th>Points</th>
+                            <th>Pourcentages</th>
+                            {% if app.session.get('votant') in cj %}
+                                <th>Votants</th>
+                            {% endif %}
+                        </tr>
+                        </thead>
+                        <tbody style="text-align: left;">
+                        {% for choix in listChoix %}
+                            <tr>
+                                <td>
+                                    {{ choix.proposition }}
+                                </td>
+                                <td>
+                                    {{ choix.count }}
+                                </td>
+                                <td>
+                                    {{ ((choix.count / total)*100) | number_format(1, ',', '.') }} %
+                                </td>
+                                {% if app.session.get('votant') in cj %}
+                                    <td style="color:green;">
+                                        {% if choix.votants is not empty %}
+                                            {% for votant in choix.votants %}
+                                                {{ votant.name }}{% if not loop.last %},&nbsp;{% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+
+                                    </td>
+                                {% endif %}
+
+                            </tr>
+                        {% endfor %}
+
+                        </tbody>
+                    </table>
+                </div>
+            {% endif %}
+
+        </div>
+            <div class="row">
+                <div id="piechart" style="width: 900px; height: 500px;"></div>
+            </div>
+    </div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+        $(document).ready(function(){
+            $("#form_proposition label").prepend('<span>&nbsp;&nbsp;</span>');
+            $("#form_proposition label").after("<br /><br />");
+            $("#form_proposition label").css('color','black');
+
+            $("#footer").css('display','none');
+            $(".social-slide").css('display','none');
+            
+            $("#btn").click(function(e){
+                e.preventDefault();
+                alert("Vote esili bokende ko lala !");
+            });
+        });
+    </script>
+
+{% else %}
+    <p>Accès interdit sans authentification ! <a href="{{path('nakevote')}}">Cliqué awa</a> pona o s'authentifier</p>
+{% endif %}       
+           
+    
+
+        </div>
+    {% endblock %}
+{% endblock %}
+{% block javascripts %}
+
+    <!-- jQuery -->
+    <script src="{{ asset('js/jquery.js') }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#form_proposition label").prepend('<span>&nbsp;&nbsp;</span>');
+            $("#form_proposition label").after("<br /><br />");
+            $("#form_proposition label").css('color','black');
+
+            $("#footer").hide();
+            $(".social-slide").hide();
+
+        });
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="{{ asset('bundles/applatform/js/vote-result.js') }}"></script>
+    <script type="text/javascript">
+        if ( window.history.replaceState ) {
+            window.history.replaceState( null, null, window.location.href );
+        }
+    </script>
+{% endblock %}

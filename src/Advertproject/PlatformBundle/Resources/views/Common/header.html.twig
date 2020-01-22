@@ -1,0 +1,31 @@
+<div id="header" class="row" style="position:static;background-color: rgba(255,255,255, 0.9);background-image: url({{ image('bundles/applatform/images/header_bg4_2.png').forceResize(1280,90, 'transparent').png }});background-repeat: no-repeat;">
+
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-4">
+            <div class="row">
+                <span style="font-size: 3em;"><img src="{{ image('bundles/applatform/images/logo-chyqat.png').forceResize(166,86) }}"></span>
+            </div>
+            <div class="row" style="font-size: 0.8em;font-style: oblique;position: relative;top:-12px;padding-left: 5%;">
+
+            </div>
+        </div>
+        <div class="col-sm-4" id="menu-wrapper">
+            <div class="row">
+
+                <div id="menu" class="col-sm-12">
+                    <ul class="nav navbar-nav collapse navbar-collapse">
+                        <li {% if active == 'home' %} class="active" {% endif %}><a href="{{ path('ap_platform_home')}}">Accueil</a></li>
+                        <li {% if active == 'about' %} class="active" {% endif %}><a href="{{ path('ap_platform_about')}}">A propos</a></li>
+                        <li {% if active == 'contact' %} class="active" {% endif %}><a href="{{ path('ap_platform_contact')}}">Nous contacter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div id="user_area" class="col-sm-3 col-sm-pull-1">
+
+            <div class="row" style="position: absolute;top:-6px;"><h1></h1></div>
+        </div>
+    </div>
+
+</div>

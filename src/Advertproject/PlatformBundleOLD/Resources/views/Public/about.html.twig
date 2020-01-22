@@ -1,0 +1,166 @@
+{% extends "APPlatformBundle::layout.html.twig" %}
+
+{% block title %}A propos - {{ parent() }}{% endblock %}
+
+{% block platform_body %}
+    {% block header %}
+        {% include('APPlatformBundle:Common:header.html.twig') with { active :'about'} %}
+    {% endblock %}
+    {% block carousel %}
+        {#{% include('APPlatformBundle:Common:carousel.html.twig') %}#}
+    {% endblock %}
+    {% block content %}
+        <div class="tf-about">
+            <div class="container marginTop100px">
+                <div class="row about-items">
+                    <div class="col-md-6">
+                        <img src="{{ image('bundles/applatform/images/img_about.png') }}" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-text">
+                            <div class="section-title">
+                                <h4>A propos</h4>
+                                <h2>Un mot<strong> à propos de nous</strong></h2>
+                                <hr>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="intro">
+                                Une croissance en constante augmentation, des ressources toujours plus importantes, une démographie en pleine expansion, l'Afrique est un continent d’opportunité ou le meilleur reste à venir et notre ambition, celles de nos associés et moi-même est d’apporter à nos partenaires l’expertise qui garantira la sécurité de leurs investissements et l’essor de leurs sociétés à travers le développement du capital humain.
+                                Notre cabinet créé en 2009 par des professionnels Africains, et avait pour raison social l’intérim et le conseil en ressources humaines. En 2011 fut créer à Casablanca au Maroc une direction dédiée à la formation. En effet nos collaborations nous ont conduits à faire le constat que nos partenaires révélaient d’excellentes qualités professionnelles, mais souhaitaient aussi améliorer leurs aptitudes, renforcer leurs capacités, et approfondir leurs compétences.
+                                Nos modules de formations tant théoriques que pratiques, nous permettent de participer à la réalisation des stratégies de développement de nos clients partenaires, nous précisons aussi que nos modules s’adressent à l’ensemble des composantes de nos partenaires, de l’Assistance de directions au Top management.
+                                Nous accompagnons aussi nos partenaires dans la définition et la mise en œuvre des stratégies de développement et le déploiement des systèmes de gestion et des outils des Ressources humaines.
+                                <br><br>OPONDJI BONI OMER<br>
+                                DIRECTEUR GENERAL
+
+                            </p>
+                            <ul class="about-list" style="list-style-type: none;">
+                                <li>
+                                    <span class="glyphicon glyphicon-expand" style="color:#f58222;"></span>
+                                    <strong style="color:#f58222;">Notre mission</strong> - <em>Fournir des prestations uniques et de haute qualité</em>
+                                </li>
+                                <li>
+                                    <span class="glyphicon glyphicon-expand" style="color:#f58222;"></span>
+                                    <strong style="color:#f58222;">Notre qualité</strong> - <em>Garantir un résultat excellent en peu de temps</em>
+                                </li>
+                                <li>
+                                    <span class="glyphicon glyphicon-expand" style="color:#f58222;"></span>
+                                    <strong style="color:#f58222;">Nos clients</strong> - <em>Satisfaits de nos services</em>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row about-items">
+                    <div class="col-md-6">
+                        <div class="about-text">
+                            <div class="section-title">
+                                <h4>Démarche</h4>
+                                <h2>Notre<strong> démarche</strong></h2>
+                                <hr>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="intro">
+                                De tous les investissements, l’investissement humain est le plus rentables, et de tous les axes de développement l’axes humain est le plus porteur.
+                                C’est pourquoi nos formations ne sont pas de simples enseignement mais plutôt un accompagnement à parfaire les compétences à travers:
+                                <ul style="list-style-type: none;">
+                                    <li><span class="glyphicon glyphicon-ok" style="color:#f58222;"></span> &nbsp;&nbsp; Apport de savoir</li>
+                                    <li><span class="glyphicon glyphicon-ok" style="color:#f58222;"></span>  &nbsp;&nbsp;Apport de savoir être</li>
+                                    <li><span class="glyphicon glyphicon-ok" style="color:#f58222;"></span>  &nbsp;&nbsp;Apport de savoir-faire</li>
+                                </ul>
+
+
+                                Nos clients s’associent à nous dans l’établissement des plans d’actions à moyens et long termes, sachant que des actions de formations et de conseils, si ils veulent être efficaces, doivent durée sur le temps.
+                                Du reste, nos formations et notre accompagnement peuvent avoir lieu à Casablanca au Maroc ou dans un autre pays au choix du client.
+                                De même, en dehors des modules qui figurent sur notre catalogue, notre offre comprend également des formations à la demande.
+                                Enfin notre équipe composé de plusieurs experts, est à votre disposition tant pour animer des formations, que pour vous accompagner dans l’élaboration de votre ingénierie de formation, ainsi que vos plans de communication et d’investissement.
+
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="image-salutation">
+                        <img src="{{ image('bundles/applatform/images/salutation.png').cropResize(275,163) }}" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="row about-items">
+                    <div id="image-entreprise" class="col-md-6">
+                        <img src="{{ image('bundles/applatform/images/entreprise.jpg').cropResize(325,253) }}" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-text">
+                            <div class="section-title">
+                                <h4>Entreprise</h4>
+                                <h2>La culture<strong>d'entreprise</strong></h2>
+                                <hr>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="intro">
+                                Notre culture, ce sont nos collaborateurs : c'est pourquoi les valeurs de notre cabinet sont définies par l'ensemble de nos consultants qui souhaitent marquer de leur empreinte l'avenir de notre société.
+                                Ces valeurs représentent le bon équilibre entre les valeurs individuelles, professionnelles, et managériales qui reflètent notre cabinet.
+                                L'excellence et la qualité de nos services, notre démarche est le travail en équipe privilégié dans toutes les phases et sur tous les projets, et sont nos créneaux pour réussir nos formations.
+                                L'engagement de CHYQAT FORMATION envers ses clients, vise à réaliser des prestations de conseil à très forte valeur ajoutée.
+                                Notre indépendance nous permet de garantir l'objectivité de nos recommandations.
+                                Ainsi, nous cherchons à construire avec nos clients, une relation de confiance et leur apportons, en dehors des projets menés dans le cadre de nos missions, une assistance ponctuelle, un conseil, un regard extérieur, ou un retour d'expérience sur les problématiques auxquelles ils sont confrontés.
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row about-items">
+                    <div class="col-md-6">
+                        <div class="about-text">
+                            <div class="section-title">
+                                <h4>L'Equipe</h4>
+                                <h2>Notre<strong> Equipe</strong></h2>
+                                <hr>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="intro">
+                                CHYQAT FORMATION est dirigé par une équipe dynamique et compétente : Elle emploi des professionnels africains (subsahariens - Marocains et expatriés ) expérimentés, qui sont à même de répondre aux besoins et exigences des entreprises partenaires.
+                                Notre Equipe possède aussi une parfaite connaissance des hommes et du marché du renforcement des capacités.
+                                De même notre équipe a le devoir de porter une attention particulière à la satisfaction de l’ensemble de nos clients, c'est pourquoi il existera chez nous une charte de valeurs garantissant des prestations de qualité.
+                                A notre expertise pédagogique, nous associons un réel savoir-faire, synonyme de garantie et de performance.
+
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id="image-equipe" class="col-md-6">
+                        <img src="{{ image('bundles/applatform/images/equipe2.png').cropResize(325,253) }}" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="row about-items">
+                    <div class="col-md-6" id="conseil">
+                        <img src="{{ image('bundles/applatform/images/conseil.png').cropResize(175,463) }}" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-text">
+                            <div class="section-title">
+                                <h4>Conseil</h4>
+                                <h2>Notre<strong> pôle Conseil</strong></h2>
+                                <hr>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="intro">
+                                CHYQAT FORMATION est dirigé par une équipe dynamique et compétente : Elle emploi des professionnels africains (subsahariens - Marocains et expatriés ) expérimentés, qui sont à même de répondre aux besoins et exigences des entreprises partenaires.
+                                Notre Equipe possède aussi une parfaite connaissance des hommes et du marché du renforcement des capacités.
+                                De même notre équipe a le devoir de porter une attention particulière à la satisfaction de l’ensemble de nos clients, c'est pourquoi il existera chez nous une charte de valeurs garantissant des prestations de qualité.
+                                A notre expertise pédagogique, nous associons un réel savoir-faire, synonyme de garantie et de performance.
+
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+{% endblock %}

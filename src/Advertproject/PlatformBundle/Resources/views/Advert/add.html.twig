@@ -1,0 +1,15 @@
+{% extends "APPlatformBundle::layout.html.twig" %}
+
+{% block title %}{% endblock %}
+
+{% block platform_body %}
+
+    <h2>Ajouter une annonce</h2>
+
+    {{ include("APPlatformBundle:Advert:form.html.twig") }}
+
+    <p>
+        Attention : cette annonce sera automatiquement ajoutée sur la page d'accueil après validation.
+    </p>
+
+{% endblock %}

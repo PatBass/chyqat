@@ -1,0 +1,19 @@
+{% extends "APUserBundle::layout.html.twig" %}
+{% trans_default_domain 'FOSUserBundle' %}
+{% block title %}Check Email - {{ parent() }}{% endblock %}
+{% block fos_user_content %}
+    {% block header %}
+        {% include('APPlatformBundle:Common:header.html.twig') with { active :'test'} %}
+    {% endblock %}
+    {% block content %}
+        <div class="container-fluid" style="position: relative; top:50px;">
+            <div class="col-sm-offset-1 col-sm-10">
+                <div class="panel panel-default">
+                    <div class="panel-body well" id="">
+                        <p><i class="glyphicon glyphicon-ok" style="color: green;"></i>  {{ 'registration.check_email'|trans({'%email%': user.email}) }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+{% endblock %}

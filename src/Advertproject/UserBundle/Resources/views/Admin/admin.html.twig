@@ -1,0 +1,123 @@
+{% extends "APUserBundle::layout.html.twig" %}
+
+{% block title %}Admin - {{ parent() }}{% endblock %}
+{% block fos_user_content %}
+    {% block header %}
+        {% include('APPlatformBundle:Common:header.html.twig') with { active :'test'} %}
+    {% endblock %}
+    {% block content %}
+        <div class="container table-responsive" style="margin-top:100px;">
+            <div class="row">
+                {% if app.session.flashbag.has('info-delete') %}
+                    <div class="alert alert-success">
+                        {% for message in app.session.flashbag.get('info-delete') %}
+                            {{ message }}
+                        {% endfor %}
+                        <div class="pull-right">
+                            <button type="button" data-toggle="tooltip" data-placement="top" title="Close" class="close" data-dismiss="alert">x</button>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="row">
+                {% if app.session.flashbag.has('info-activate') %}
+                    <div class="alert alert-success">
+                        {% for message in app.session.flashbag.get('info-activate') %}
+                            {{ message }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="row">
+                {% if app.session.flashbag.has('info-deactivate') %}
+                    <div class="alert alert-success">
+                        {% for message in app.session.flashbag.get('info-deactivate') %}
+                            {{ message }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="row">
+                <p>xxxx users currently logged in</p>
+            </div>
+            <div class="whiteBackground">
+                <table class="table table-bordered table-striped table-condensed" id="star-account-statistics-table">
+                    <thead>
+
+                    <tr>
+                        <th class="info">ID Partner</th>
+                        <th class="info">Company Name</th>
+                        <th class="info">Flag</th>
+                        <th class="info">Profile Type</th>
+                        <th class="info">Subscription Date</th>
+                        <th class="info">Last Visit</th>
+                        <th class="info">Last Modifications</th>
+                        <th class="info">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for user in users %}
+                        <tr class="">
+                            <td>{{ user.id }}</td>
+                            <td>{{ user.companyName }}</td>
+                            <td>
+                                {% if user.locked %}
+                                    <span class="label label-default">Disabled</span>
+                                {% else %}
+                                    <span class="label label-success">Enabled</span>
+                                {% endif %}
+                            </td>
+                            <td>
+
+                                {% if user.type == 0 %}
+                                    Manufacturer
+                                {% elseif user.type == 1 %}
+                                    Buyer
+                                {% elseif user.type == 2 %}
+                                    Agent
+                                {% endif %}
+
+                            </td>
+                            <td>{{ user.date|date('m-d-Y   H:i:s') }}</td>
+                            <td>{{ user.updatedAt|date('m-d-Y   H:i:s') }}</td>
+                            <td></td>
+                            <td><a href="{{ path('ap_user_delete', {'id': user.id}) }}" class="btn btn-danger">Delete</a> <a href="{{ path('ap_user_deactivate', {'id': user.id}) }}" class="btn btn-default">Disable</a> <a href="{{ path('ap_user_activate', {'id': user.id}) }}" class="btn btn-success">Enable</a> <a href="{{ path('fos_user_profile_edit', {'id':user.id}) }}" class="btn btn-primary">Edit</a> </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <h2>Contact Infos</h2><br>
+            <div class="whiteBackground">
+                <table class="table table-bordered table-striped table-condensed" id="star-account-statistics-table">
+                    <thead>
+
+                    <tr>
+                        <th class="info">Company Name</th>
+                        <th class="info">Email</th>
+                        <th class="info">Phone</th>
+                        <th class="info">IP Address</th>
+                        <th class="info">Country</th>
+                        <th class="info">Manager Details</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for user in users %}
+                        <tr class="">
+                            <td>{{ user.companyName }}</td>
+
+                            <td>{{ user.email }}</td>
+                            <td>{{ user.phone }}</td>
+                            <td></td>
+                            <td></td>
+                            <td>{{ user.details |nl2br }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    {% endblock %}
+{% endblock %}

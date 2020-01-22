@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+
+        RewriteEngine On
+        RewriteRule ^piwik/ - [L]
+        RewriteBase /
+
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteRule ^(.*)$ /web/app.php/ [QSA,L]
+    </IfModule>

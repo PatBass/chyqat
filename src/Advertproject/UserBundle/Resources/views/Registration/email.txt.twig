@@ -1,0 +1,27 @@
+{#
+{% trans_default_domain 'FOSUserBundle' %}
+{% block subject %}
+{% autoescape false %}
+{{ 'registration.email.subject'|trans({'%username%': user.companyName, '%confirmationUrl%': confirmationUrl}) }}
+{% endautoescape %}
+{% endblock %}
+{% block body_text %}
+{% autoescape false %}
+{{ 'registration.email.message'|trans({'%username%': user.username, '%confirmationUrl%': confirmationUrl}) }}
+{% endautoescape %}
+{% endblock %}
+{% block body_html %}{% endblock %}
+#}
+
+{% block subject %}Registration{% endblock %}
+
+{% block body_text %}
+    {% autoescape false %}
+    Hi {{ user.companyName }} !
+
+    To finish activating your account - please visit {{ confirmationUrl }}
+
+    Greetings,
+    Yafabhi Company
+    {% endautoescape %}
+{% endblock %}

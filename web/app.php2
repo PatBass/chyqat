@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Accueil - Chyqat </title>
+
+        
+                        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+            <link href= media="all" rel="stylesheet" type="text/css" />
+            <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+                            <link rel="stylesheet" href="/web/app.php/css/f613398.css"
+                            <script src='https://www.google.com/recaptcha/api.js'></script>
+    </head>
+
+    <body style="margin: 0;padding: 0;">
+        <div id="wrapper" class="container-fluid" style="padding-bottom: 0;background-image: url(/web/bundles/applatform/images/world-map-background.jpg);background-repeat: repeat-y;">
+                    <div id="header" class="row" style="position:static;background-color: rgba(255,255,255, 0.9);background-image: url(/web/cache/b/2/5/9/2/b25928bab8a1c6a1cf85dfc35d5afa778a290ee9.png);background-repeat: no-repeat;">
+
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-4">
+            <div class="row">
+                <span style="font-size: 3em;"><img src="/web/cache/e/d/f/0/b/edf0b278fd7fc0759510c0c9cb22cfa9c216c02d.png"></span>
+            </div>
+            <div class="row" style="font-size: 0.8em;font-style: oblique;position: relative;top:-12px;padding-left: 5%;">
+
+            </div>
+        </div>
+        <div class="col-sm-4" id="menu-wrapper">
+            <div class="row">
+
+                <div id="menu" class="col-sm-12">
+                    <ul class="nav navbar-nav collapse navbar-collapse">
+                        <li  class="active" ><a href="/web/app.php/home">Accueil</a></li>
+                        <li ><a href="/web/app.php/home/About">A propos</a></li>
+                        <li ><a href="/web/app.php/home/Contact">Nous contacter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div id="user_area" class="col-sm-3 col-sm-pull-1">
+
+            <div class="row" style="position: absolute;top:-6px;"><h1></h1></div>
+        </div>
+    </div>
+
+</div>
+                                                <div class="container">
+            <div class="line section-title center" style="text-align: center;color:white;text-shadow: 2px 2px 2px #f58222, 0 0 25px green, 0 0 5px #f58222;">
+                <!--<hr class="styledLine">-->
+
+                    <h2>CONSULTEZ NOS MODULES CI-DESSOUS OU TOUT LE CATALOGUE COMPLET</h2>
+
+
+                <hr class="styledLine">
+                <div class="row pull-right">
+                 <h4>Catalogue complet</h4>  
+    <div>
+                    Français : <a href="/web/app.php/modules/Catalogue-v1.pdf"><img src="/web/cache/c/3/5/8/4/c3584028a92c848bc4dbd64ec1eced7975fcdad7.png"></a>
+                </div>
+    <div>
+                    Anglais : <a href="/web/app.php/modules/Catalogue-v3.pdf"><img src="/web/cache/c/3/5/8/4/c3584028a92c848bc4dbd64ec1eced7975fcdad7.png"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6 heading-colored"><p style="margin-bottom: 50px;"></p></div><br><br>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_8_Communication_Tele_communication_Marketing_et_Developpement_commercial.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-save-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Téléchargez, remplissez puis renvoyez-nous cette fiche par mail"><i class="glyphicon glyphicon-save-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/5/2/e/c/7/52ec72467617b8d302414dd7957472d75f96194b.png" alt="" height="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 id="modules" class="heading-colored">Communication –Télécommunication – Marketing & Développement commercial</h5>
+                            <div>
+                                <!--
+                                <p>
+                                    <p>La FONCTION COMMUNICATION d'entreprise repose sur trois enjeux :</p>
+                                    <ul>
+                                        <li>donner du sens à la stratégie de l'entreprise et permettre à chacun de se l'approprier et de la décliner au quotidien ;</li>
+                                        <li>concourir au développement de l'activité par la mise en œuvre d'outils et de techniques de communication ;</li>
+                                        <li>faciliter les relations de coopération et de confiance entre les acteurs internes et externes.</li>
+                                    </ul>
+                                    <p>Chyqat, à travers les Modules qui vous sont proposés ici, vous offre la possibilité de maitriser tous les contours de cette Fonction essentielle, de positionner votre entreprise et de posséder toutes armes de succès de votre profession de spécialiste de la Communication acteurs internes et externes.</p>
+
+                                </p>
+                                -->
+                            </div>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_8_Communication_Tele_communication_Marketing_et_Developpement_commercial.pdf"  class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a> </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_10_Budget_Controle_budgetaire_et_Controle_de_gestion.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Téléchargez, remplissez puis renvoyez-nous cette fiche par mail"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/9/e/8/1/a/9e81a3c24238b0152e5ce36821e26754f52d529f.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Budget - Contôle budgétaire & Contrôle de gestion </h5>
+                            <!--<p>
+                                En cette période de crise économique et financière, les entreprises surveillent plus que jamais les aspects financiers de leurs activités. En tant que garants de la rentabilité, les services comptables et financiers sont particulièrement exposés. La prise en compte, le plus tôt possible, des désirs des utilisateurs d’information financière dans l’élaboration des outils et des procédures est une étape indispensable dans la construction d’un système financier stable et efficace.
+                                Aussi convient-il de se montrer réactif et de s’adapter à l’exigence accrue demandée à tous les membres des directions financières bien au-delà de la simple logique de réduction des coûts exigée par la crise.
+
+                            </p>-->
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_10_Budget_Controle_budgetaire_et_Controle_de_gestion.pdf" data-toggle="tooltip" class="btn btn-default"  data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_15_TIC_et_Systemes_d_information.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Téléchargez, remplissez puis renvoyez-nous cette fiche par mail"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/6/9/4/2/1/69421a45bd6cd11acebdf094c9f69974e36b74af.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">TIC & Système D’information
+                            </h5>
+                            <!--<p>
+                                Les TIC évoluent en permanence pour offrir aux entreprises des gains de productivité et outiller leur performance. Les entreprises africaines ont plus que jamais besoin des nouvelles technologies. Par ailleurs la protection de l'information est devenue un enjeu majeur pour les ...entreprises et les organisations africaines face au développement fulgurant......des TIC et particulièrement Internet pour répondre à cette demande, CHYQAT a développé de nouvelles formations adaptées aux évolutions et aux contextes des entreprises et administrations africaines, avec à la clé la délivrance de CERTIFICATIONS internationalement reconnues.
+
+                            </p>-->
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_15_TIC_et_Systemes_d_information.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_16_Environnement_Agriculture_et_Developpement_durable.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/2/8/d/9/4/28d9427c9f8b9fdeea65e2c76da423ec187ff207.jpeg" alt="" height="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Environnement - Agriculture & Développement durable
+                            </h5>
+                            <div>
+                                <!--<p>
+                                    En matière Environnementale et agricole, nous vous proposons des formations continues et initiales sur différentes thématiques pour apprendre ou seulement se remettre à niveau. CHYQAT propose la première gamme de Modules de formation en l’environnement et Développement Durable au Maroc.
+
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_16_Environnement_Agriculture_et_Developpement_durable.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"> </i> En savoir plus</a> </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_6_Decentralisation_Developpement_local_et_Gestion_urbaine.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Téléchargez, remplissez puis renvoyez-nous cette fiche par mail"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/e/9/6/c/a/e96ca361b530e3fb030d1fafdfd56d31d58b1de1.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Décentralisation, Développement local & Gestion urbaine (CQTDLGU) </h5>
+                            <!--<p>
+                                L’évolution des collectivités territoriales est marquée par des réformes institutionnelles et provoque différentes conséquences politique, organisationnelle et financière...
+                                Les collectivités doivent ainsi veiller à rationaliser leur gestion publique. A n'en point douter, elles ont l’obligation d'avancer vers une meilleure qualité de leurs services publics et une évaluation de leurs performances.
+
+                            </p>-->
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_6_Decentralisation_Developpement_local_et_Gestion_urbaine.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_7_Assistanat_de_direction_et_Secretariat.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/5/f/3/0/3/5f3036fdc6bcd33409ae297f7babe9fb579604ed.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Assistanat de direction & Secrétariat (ADS)</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_7_Assistanat_de_direction_et_Secretariat.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_1_Gestion_portuaire_Transport_maritime.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/9/4/f/7/d/94f7d7c1fd87d453312dfe5a5f6d1f466fb19206.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Gestion portuaire - Transport maritime</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_1_Gestion_portuaire_Transport_maritime.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_2_Mines_et_Energies.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/5/a/a/5/5/5aa5570c398c5c862afe567c142e59213608a8b6.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Mines et Energies</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_2_Mines_et_Energies.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_3_Petrole_et_produits_derives.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/b/f/9/7/a/bf97a9592057b32f6c7d2f7f3247da635a97fd63.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Pétrole et produits dérivés</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_3_Petrole_et_produits_derives.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_4_Gestion_des_marches_publics.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/6/a/3/1/a/6a31a95485ba9c0ad1a9bee9154402589604d583.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Gestion des marchés publics</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_4_Gestion_des_marches_publics.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_5_Management_des_projets_et_programme_de_developpement.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/d/0/8/5/f/d085fb39ac0c0cf2b4957f24bf0a6f54cf7c5f2c.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Management des projets et programme de développement </h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_5_Management_des_projets_et_programme_de_developpement.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_9_GRH_et_Performance_des_organisations.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/4/f/9/f/5/4f9f5ae2ee6b6888a7ca22975f03fd10ac83f259.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">GRH et Performance des organisations </h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_9_GRH_et_Performance_des_organisations.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_11_Banque_Assurance_Recouvrement.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/f/5/4/d/1/f54d18ca1f7bff9327a5bf1f2cc0e5c9b36df04b.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Banque - Assurance - Recouvrement</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_11_Banque_Assurance_Recouvrement.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_12_Gouvernance_publique_privee_et_Politiques_sectorielles.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/3/8/7/d/f/387df53a63eb05a9331b99fd97e89740556b962f.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Gouvernance publique - privée et Politiques sectorielles</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_12_Gouvernance_publique_privee_et_Politiques_sectorielles.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_13_MicroFinance_et_Developpement_rural.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/7/d/4/c/5/7d4c5f9929bef29d3b72de24ffee14ceac0ad418.png" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Micro Finance et Développement rural </h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_13_MicroFinance_et_Developpement_rural.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_14_Transport_Logistique_Routes_Travaux_publics.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/5/8/7/0/3/587034c0967a294e8c389775c18ca9358d175d72.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Transport - Logistique - Routes - Travaux publics </h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_14_Transport_Logistique_Routes_Travaux_publics.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_17_Systeme_d_information_geographique_et_Cartographie_assistee_par_ordinateur.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/5/1/b/2/d/51b2d5eaf8c8045b88b2f3b6b110cf4b5ab8997d.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Système d'information géographique et Cartographie assistée par ordinateur</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_17_Systeme_d_information_geographique_et_Cartographie_assistee_par_ordinateur.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_18_Seminaires_sous_regionaux.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/a/c/e/8/6/ace8679485d5ee0330ec5fe29d8aa555477912d7.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Séminaires sous-régionaux</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_18_Seminaires_sous_regionaux.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_19_Medecine_du_Travail_et_structure_de_Sante_Interne.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/e/b/6/8/c/eb68c1455114650da6adc89ae3784dfff47a1d26.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Médecine du Travail et Structures de Santé interne</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_19_Medecine_du_Travail_et_structure_de_Sante_Interne.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_20_POLE_AERO_PORTUAIRE_INFRASTRUCTURE.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/3/8/4/6/d/3846d4acf5ef6079c39c233558f029d1e9b21d75.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Pôle aéro-portuaire - Infrastructure</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_20_POLE_AERO_PORTUAIRE_INFRASTRUCTURE.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="/web/app.php/modules/Module_21_ENERGIE_SOLAIRE_PHOTOVOLTAIQUE.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="/web/app.php/modules/Fiche_d_inscription.pdf" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="/web/cache/b/a/5/5/e/ba55e4b1b6382c4c15b27b8201111944dfebdf20.jpeg" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Energies solaires photovoltaique et thermique - Performance énergétique du bâtiment</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="/web/app.php/modules/Module_21_ENERGIE_SOLAIRE_PHOTOVOLTAIQUE.pdf" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <br><br>
+
+                <div class="col-xs-offset-4 col-xs-12">
+
+                </div>
+            </div>
+        </div>
+                                <footer id="footer" style="background-color:rgba(46, 139, 87,0.5);color: lightgrey;padding-top: 20px;z-index: 99;bottom:0px;">
+
+
+
+    <div class="container-fluid">
+        <div class="row textShodow" style="font-size: 0.9em;">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; P&K Technologies 2016. All right reserved.</span>
+            </div>
+            <div class="si-sticky si-sticky-right hidden-sm hidden-xs">
+                <a href="https://web.facebook.com/Chyqat-Formation-497584000439916/?ref=ts&fref=ts" target="_blank" class="social-icon si-colored si-facebook" data-animate="bounceInRight">
+                    <div class="social-slide" style="position: relative;top:-10px;left:-10px;background-image: url('/web/bundles/applatform/images/facebook-hover.png');"></div>
+                </a>
+            </div>
+
+
+            <div class="col-md-4">
+                <a href="https://web.facebook.com/Chyqat-Formation-497584000439916/?ref=ts&fref=ts"><div class="social-popout"><img src="/web/bundles/applatform/images/facebook-48circle.png" /></div></a>
+
+                <a href="#"><div class="social-popout"><img src="/web/bundles/applatform/images/twitter-48circle.png" /></div></a>
+
+
+            </div>
+
+            <div class="col-md-4">
+                <p id="newsletter-paragraph">Inscrivez-vous à notre newsletter pour être informé des nouveautés</p>
+                <form class="navbar-form inline-form validate row" action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                    <div class="form-group col-xs-12" id="mc_embed_signup_scroll">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <input id="email" type="email" class="input-sm form-control email" placeholder="Tapez votre email ici" title="Tapez votre adresse email ici"  value="" name="EMAIL"  id="mce-EMAIL"  />
+                                <button style="background-color: #f58222" type="submit" class="btn btn-sm button" name="subscribe" id="mc-embedded-subscribe" ><span class="glyphicon glyphicon-envelope" style="color: lightgreen;"></span> S'inscrire</button>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_9056c8cff880b809e8c77ea97_c9635dc289" tabindex="-1" value="" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+        <script type="text/javascript" src="/web/app.php/js/cc61884_jquery-scrolltofixed-min_1.js"></script>
+        <script type="text/javascript" src="/web/app.php/js/cc61884_tooltip_2.js"></script>
+        <script type="text/javascript" src="/web/app.php/js/cc61884_popover_3.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://cdn.ckeditor.com/4.5.1/full/ckeditor.js"></script>
+    <script src="/web/bundles/core/js/bootstrap.min.js"></script>
+    <script src="/web/bundles/applatform/js/bootstrap-tabs-x.min.js"></script>
+    <script src="/web/bundles/applatform/js/jquery-2.1.4.min.js"></script>
+    <script src="/web/bundles/applatform/ckeditor/ckeditor.js"></script>
+
+    <script src="/web/bundles/applatform/js/jquery-scrolltofixed-min.js"></script>
+    <script src="/web/bundles/applatform/js/tooltip.js"></script>
+    <script src="/web/bundles/applatform/js/popover.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("[rel='tooltip']").tooltip();
+
+            $('.thumbnail').hover(
+                    function(){
+                        $(this).find('.caption').slideDown(250); //.fadeIn(250)
+                    },
+                    function(){
+                        $(this).find('.caption').slideUp(250); //.fadeOut(205)
+                    }
+            );
+        });
+
+    </script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#header').scrollToFixed({ marginTop: 0});
+            $('#footer').scrollToFixed();
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#pop").popover({placement:'bottom'});
+        });
+    </script>
+    <script type='text/javascript'>//<![CDATA[
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            if($('#errorForm').is(':empty')){
+                $(".alert-notice").hide();
+            }
+            $(".close").click(function() {
+                $(".alert-notice").fadeOut();
+            });
+        });
+
+        //]]></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+
+            var substring = 'Invalid';
+            if ($("#display-error-login").text().indexOf(substring) > -1) {
+                $("#display-error-login").show("slow");
+            }
+
+            $(".close").click(function() {
+                $("#display-error-login").fadeOut(4000);
+            });
+        });
+    </script>
+
+
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/popover.js"></script>
+    <script src="/web/bundles/applatform/js/tooltip.js"></script>
+    <script src="/web/bundles/applatform/js/modal.js"></script>
+    <script src="/web/bundles/applatform/js/popover.js"></script>
+    <script src="/web/bundles/applatform/js/collapse.js"></script>
+    <script src="/web/bundles/applatform/js/tab.js"></script>
+
+
+</footer>                                        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us1.list-manage.com","uuid":"d93866a99a15e6ad3c79732a1","lid":"d7ba620934"}) })</script>
+
+                            
+        </div>
+    </body>
+</html>

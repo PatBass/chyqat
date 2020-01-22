@@ -1,0 +1,13 @@
+{# src/OC/PlatformBundle/Resources/views/layout.html.twig #}
+
+{% extends "::layout.html.twig" %}
+
+{% block title %}{{ parent() }} {% endblock %}
+
+{% block body %}
+    {% block platform_body %}
+        {% block header %}{% endblock %}
+        {% block carousel %}{% endblock %}
+        {% block content %}{% endblock %}
+    {% endblock %}
+{% endblock %}

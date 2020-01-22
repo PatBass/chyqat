@@ -1,0 +1,11 @@
+{% extends "APUserBundle::layout.html.twig" %}
+
+{% block title %}Password Resetting - {{ parent() }}{% endblock %}
+{% block fos_user_content %}
+    {% block header %}
+        {% include('APPlatformBundle:Common:header.html.twig') with { active :'test'} %}
+    {% endblock %}
+    {% block content %}
+        {% include "APUserBundle:Resetting:reset_content.html.twig" %}
+    {% endblock %}
+{% endblock %}

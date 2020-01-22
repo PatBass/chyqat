@@ -1,0 +1,90 @@
+<footer style="margin-bottom: 0;">
+
+   <hr class="styledLine">
+
+    <div class="container-fluid">
+        <div class="row textShodow" style="text-align: center;font-size: 0.9em;">
+             © 2015 P&K Technologies. All rights reserved. {% if is_granted('ROLE_ADMIN') %} / <a href="{{ path('admin') }}">Admin</a> {% endif %}
+        </div>
+
+    </div>
+
+    {% javascripts '@APPlatformBundle/Resources/public/js/jquery-scrolltofixed-min.js'
+                   '@APPlatformBundle/Resources/public/js/tooltip.js'
+                   '@APPlatformBundle/Resources/public/js/popover.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://cdn.ckeditor.com/4.5.1/full/ckeditor.js"></script>
+    <script src="{{ asset('bundles/core/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bundles/applatform/js/bootstrap-tabs-x.min.js') }}"></script>
+    <script src="{{ asset('bundles/applatform/js/jquery-2.1.4.min.js') }}"></script>
+    <script src="{{ asset('bundles/applatform/ckeditor/ckeditor.js') }}"></script>
+
+    <script src="{{ asset('bundles/applatform/js/jquery-scrolltofixed-min.js') }}"></script>
+    <script src="{{ asset('bundles/applatform/js/tooltip.js') }}"></script>
+    <script src="{{ asset('bundles/applatform/js/popover.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("[rel='tooltip']").tooltip();
+
+            $('.thumbnail').hover(
+                    function(){
+                        $(this).find('.caption').slideDown(250); //.fadeIn(250)
+                    },
+                    function(){
+                        $(this).find('.caption').slideUp(250); //.fadeOut(205)
+                    }
+            );
+        });
+
+    </script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#header').scrollToFixed({ marginTop: 0});
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#pop").popover({placement:'bottom'});
+        });
+    </script>
+    <script type='text/javascript'>//<![CDATA[
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            if($('#errorForm').is(':empty')){
+                $(".alert-login").hide();
+            }
+            $(".close").click(function() {
+                $(".alert-login").fadeOut();
+            });
+        });
+
+        //]]></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+
+            var substring = 'Invalid';
+            if ($("#display-error-login").text().indexOf(substring) > -1) {
+                $("#display-error-login").show("slow");
+            }
+
+            $(".close").click(function() {
+                $("#display-error-login").fadeOut(4000);
+            });
+        });
+    </script>
+
+
+
+    <script src="{{ asset('//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js') }}" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="{{ asset('//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/popover.js') }}"></script>
+    <script src="{{ asset('bundles/applatform/js/tooltip.js') }}"></script>
+    <script src="{{ asset('bundles/applatform/js/modal.js') }}"></script>
+    <script src="{{ asset('bundles/applatform/js/popover.js') }}"></script>
+    <script src="{{ asset('bundles/applatform/js/collapse.js') }}"></script>
+    <script src="{{ asset('bundles/applatform/js/tab.js') }}"></script>
+
+
+</footer>

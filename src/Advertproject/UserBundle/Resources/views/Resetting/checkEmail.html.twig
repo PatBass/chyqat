@@ -1,0 +1,14 @@
+{% extends "APUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+    {% block header %}
+        {% include('APPlatformBundle:Common:header.html.twig') with { active :'test'} %}
+    {% endblock %}
+    {% block content %}
+        <p class="marginTop100px textAlignCenter">
+            {{ 'resetting.check_email'|trans({'%email%': email}) }}
+        </p>
+    {% endblock %}
+{% endblock %}

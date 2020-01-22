@@ -1,0 +1,13 @@
+{% extends "APUserBundle::layout.html.twig" %}
+
+{% block title %}Registration - {{ parent() }}{% endblock %}
+{% block fos_user_content %}
+    {% block header %}
+        {% include('APPlatformBundle:Common:header.html.twig') with { active :'test'} %}
+    {% endblock %}
+    {% block content %}
+        {% include "APUserBundle:Registration:register_content.html.twig" %}
+    {% endblock %}
+{% endblock %}
+
+

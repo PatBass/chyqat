@@ -1,0 +1,45 @@
+{# app/Resources/views/layout.html.twig #}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% block title %}Chyqat{% endblock %}</title>
+
+        {% block stylesheets %}
+
+            {# Here bootstrap is loaded from CDN #}
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+            <link href= media="all" rel="stylesheet" type="text/css" />
+            <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+            {% stylesheets
+                '@APPlatformBundle/Resources/public/css/*'
+                '@APPlatformBundle/Resources/public/ckeditor/contents.css' filter="" combine=true %}
+                <link rel="stylesheet" href="{{ asset_url }}"
+            {% endstylesheets %}
+        {% endblock %}
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+    </head>
+
+    <body style="margin: 0;padding: 0;">
+        <div id="wrapper" class="container-fluid" style="padding-bottom: 0;background-image: url({{ asset('bundles/applatform/images/world-map-background.jpg') }});background-repeat: repeat-y;">
+            {% block header %}{% endblock %}
+            {% block carousel %}{% endblock %}
+            {% block content %}{% endblock %}
+            {% block footer %}
+                {% include('APPlatformBundle:Common:footer.html.twig') %}
+            {% endblock %}
+            {% block javascript %}
+                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us1.list-manage.com","uuid":"d93866a99a15e6ad3c79732a1","lid":"d7ba620934"}) })</script>
+
+                {% javascripts %}
+                {% endjavascripts %}
+            {% endblock %}
+
+        </div>
+    </body>
+</html>

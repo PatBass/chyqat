@@ -1,0 +1,468 @@
+{# src/OC/PlatformBundle/Resources/views/Advert/index.html.twig #}
+
+{% extends "APPlatformBundle::layout.html.twig" %}
+
+{% block title %}Accueil - {{ parent() }}{% endblock %}
+
+{% block platform_body %}
+    {% block header %}
+        {% include('APPlatformBundle:Common:header.html.twig') with { active :'home'} %}
+    {% endblock %}
+    {% block carousel %}
+        {#{% include('APPlatformBundle:Common:carousel.html.twig') %}#}
+    {% endblock %}
+    {% block content %}
+        <div class="container">
+            <div class="line section-title center" style="text-align: center;color:white;text-shadow: 2px 2px 2px #f58222, 0 0 25px green, 0 0 5px #f58222;">
+                <!--<hr class="styledLine">-->
+
+                    <h2>CONSULTEZ NOS MODULES CI-DESSOUS OU TOUT LE CATALOGUE COMPLET</h2>
+
+
+                <hr class="styledLine">
+                <div class="row pull-right">
+                    Le Catalogue complet : <a href="{{ path('ap_platform_modules', {'file': 'Catalogue-v3.pdf'}) }}"><img src="{{ image('bundles/applatform/images/PDFicon.png').cropResize(32,32) }}"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6 heading-colored"><p style="margin-bottom: 50px;"></p></div><br><br>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_8_Communication_Tele_communication_Marketing_et_Developpement_commercial.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-save-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Téléchargez, remplissez puis renvoyez-nous cette fiche par mail"><i class="glyphicon glyphicon-save-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/com-telecom-marketing.png').cropResize(275,183) }}" alt="" height="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 id="modules" class="heading-colored">Communication –Télécommunication – Marketing & Développement commercial</h5>
+                            <div>
+                                <!--
+                                <p>
+                                    <p>La FONCTION COMMUNICATION d'entreprise repose sur trois enjeux :</p>
+                                    <ul>
+                                        <li>donner du sens à la stratégie de l'entreprise et permettre à chacun de se l'approprier et de la décliner au quotidien ;</li>
+                                        <li>concourir au développement de l'activité par la mise en œuvre d'outils et de techniques de communication ;</li>
+                                        <li>faciliter les relations de coopération et de confiance entre les acteurs internes et externes.</li>
+                                    </ul>
+                                    <p>Chyqat, à travers les Modules qui vous sont proposés ici, vous offre la possibilité de maitriser tous les contours de cette Fonction essentielle, de positionner votre entreprise et de posséder toutes armes de succès de votre profession de spécialiste de la Communication acteurs internes et externes.</p>
+
+                                </p>
+                                -->
+                            </div>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_8_Communication_Tele_communication_Marketing_et_Developpement_commercial.pdf'}) }}"  class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a> </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_10_Budget_Controle_budgetaire_et_Controle_de_gestion.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Téléchargez, remplissez puis renvoyez-nous cette fiche par mail"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/budget2.jpg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Budget - Contôle budgétaire & Contrôle de gestion </h5>
+                            <!--<p>
+                                En cette période de crise économique et financière, les entreprises surveillent plus que jamais les aspects financiers de leurs activités. En tant que garants de la rentabilité, les services comptables et financiers sont particulièrement exposés. La prise en compte, le plus tôt possible, des désirs des utilisateurs d’information financière dans l’élaboration des outils et des procédures est une étape indispensable dans la construction d’un système financier stable et efficace.
+                                Aussi convient-il de se montrer réactif et de s’adapter à l’exigence accrue demandée à tous les membres des directions financières bien au-delà de la simple logique de réduction des coûts exigée par la crise.
+
+                            </p>-->
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_10_Budget_Controle_budgetaire_et_Controle_de_gestion.pdf'}) }}" data-toggle="tooltip" class="btn btn-default"  data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_15_TIC_et_Systemes_d_information.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Téléchargez, remplissez puis renvoyez-nous cette fiche par mail"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/ntic3.jpg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">TIC & Système D’information
+                            </h5>
+                            <!--<p>
+                                Les TIC évoluent en permanence pour offrir aux entreprises des gains de productivité et outiller leur performance. Les entreprises africaines ont plus que jamais besoin des nouvelles technologies. Par ailleurs la protection de l'information est devenue un enjeu majeur pour les ...entreprises et les organisations africaines face au développement fulgurant......des TIC et particulièrement Internet pour répondre à cette demande, CHYQAT a développé de nouvelles formations adaptées aux évolutions et aux contextes des entreprises et administrations africaines, avec à la clé la délivrance de CERTIFICATIONS internationalement reconnues.
+
+                            </p>-->
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_15_TIC_et_Systemes_d_information.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_16_Environnement_Agriculture_et_Developpement_durable.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/agri-et-dev-durable.jpg').forceResize(275, 183) }}" alt="" height="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Environnement - Agriculture & Développement durable
+                            </h5>
+                            <div>
+                                <!--<p>
+                                    En matière Environnementale et agricole, nous vous proposons des formations continues et initiales sur différentes thématiques pour apprendre ou seulement se remettre à niveau. CHYQAT propose la première gamme de Modules de formation en l’environnement et Développement Durable au Maroc.
+
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_16_Environnement_Agriculture_et_Developpement_durable.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"> </i> En savoir plus</a> </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_6_Decentralisation_Developpement_local_et_Gestion_urbaine.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Téléchargez, remplissez puis renvoyez-nous cette fiche par mail"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/gestion-urbaine.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Décentralisation, Développement local & Gestion urbaine (CQTDLGU) </h5>
+                            <!--<p>
+                                L’évolution des collectivités territoriales est marquée par des réformes institutionnelles et provoque différentes conséquences politique, organisationnelle et financière...
+                                Les collectivités doivent ainsi veiller à rationaliser leur gestion publique. A n'en point douter, elles ont l’obligation d'avancer vers une meilleure qualité de leurs services publics et une évaluation de leurs performances.
+
+                            </p>-->
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_6_Decentralisation_Developpement_local_et_Gestion_urbaine.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_7_Assistanat_de_direction_et_Secretariat.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/secretariat.jpg').cropResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Assistanat de direction & Secrétariat (ADS)</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_7_Assistanat_de_direction_et_Secretariat.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_1_Gestion_portuaire_Transport_maritime.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/gestion-portuaire.jpg').cropResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Gestion portuaire - Transport maritime</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_1_Gestion_portuaire_Transport_maritime.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_2_Mines_et_Energies.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/mines-et-energies.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Mines et Energies</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_2_Mines_et_Energies.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_3_Petrole_et_produits_derives.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/petrole-et-produits.jpg').cropResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Pétrole et produits dérivés</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_3_Petrole_et_produits_derives.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_4_Gestion_des_marches_publics.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/marches-publics.jpeg').cropResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Gestion des marchés publics</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_4_Gestion_des_marches_publics.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_5_Management_des_projets_et_programme_de_developpement.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/prog-dev.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Management des projets et programme de développement </h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_5_Management_des_projets_et_programme_de_developpement.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_9_GRH_et_Performance_des_organisations.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/grh.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">GRH et Performance des organisations </h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_9_GRH_et_Performance_des_organisations.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_11_Banque_Assurance_Recouvrement.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/banque.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Banque - Assurance - Recouvrement</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_11_Banque_Assurance_Recouvrement.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_12_Gouvernance_publique_privee_et_Politiques_sectorielles.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/gouvernance-publique.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Gouvernance publique - privée et Politiques sectorielles</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_12_Gouvernance_publique_privee_et_Politiques_sectorielles.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_13_MicroFinance_et_Developpement_rural.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/micro-finance2.png').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Micro Finance et Développement rural </h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_13_MicroFinance_et_Developpement_rural.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_14_Transport_Logistique_Routes_Travaux_publics.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/transport-logistique.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Transport - Logistique - Routes - Travaux publics </h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_14_Transport_Logistique_Routes_Travaux_publics.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_17_Systeme_d_information_geographique_et_Cartographie_assistee_par_ordinateur.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/sig.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Système d'information géographique et Cartographie assistée par ordinateur</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_17_Systeme_d_information_geographique_et_Cartographie_assistee_par_ordinateur.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_18_Seminaires_sous_regionaux.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/seminaires sous-regionaux 2.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Séminaires sous-régionaux</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_18_Seminaires_sous_regionaux.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_19_Medecine_du_Travail_et_structure_de_Sante_Interne.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/medecine du travail.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Médecine du Travail et Structures de Santé interne</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_19_Medecine_du_Travail_et_structure_de_Sante_Interne.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_20_POLE_AERO_PORTUAIRE_INFRASTRUCTURE.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/pole aero-portuaire 2.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Pôle aéro-portuaire - Infrastructure</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_20_POLE_AERO_PORTUAIRE_INFRASTRUCTURE.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default panel-home">
+                        <div class="panel-heading thumbnail">
+                            <div class="caption">
+                                <h4 class="">En savoir plus</h4>
+                                <p class="">
+                                    <a class="btn btn-success" href="{{ path('ap_platform_modules', {'file': 'Module_21_ENERGIE_SOLAIRE_PHOTOVOLTAIQUE.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Consulter ce module</a><br/><br/>
+                                    <a class="btn btn-primary" href="{{ path('ap_platform_modules', {'file': 'Fiche_d_inscription.pdf'}) }}" data-toggle="tooltip" data-placement="bottom" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-file" style="color:#f58222;"></i> Télécharger la fiche d'inscription</a>
+                                </p>
+                            </div>
+                            <img src="{{ image('bundles/applatform/images/solaire-photovoltaique.jpeg').forceResize(275,183) }}" alt="">
+                        </div>
+                        <div class="panel-body panel-body-home">
+                            <h5 class="heading-colored">Energies solaires photovoltaique et thermique - Performance énergétique du bâtiment</h5>
+                        </div>
+                        <div class="panel-footer heading-colored"><a href="{{ path('ap_platform_modules', {'file': 'Module_21_ENERGIE_SOLAIRE_PHOTOVOLTAIQUE.pdf'}) }}" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Vous pouvez consulter et/ou télécharger ce module"><i class="glyphicon glyphicon-plus-sign" style="color: #f58222;"></i> En savoir plus</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <br><br>
+
+                <div class="col-xs-offset-4 col-xs-12">
+
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}
+

@@ -1,0 +1,69 @@
+ap_platform:
+    path:     /
+    defaults: { _controller: APPlatformBundle:Advert:default }
+
+
+ap_platform_home:
+    path:     home/{page}
+    defaults: { _controller: APPlatformBundle:Advert:index, page: 1 }
+    requirements:
+        page: \d*
+
+ap_platform_modules:
+    path:     modules/{file}
+    defaults: { _controller: APPlatformBundle:Advert:downloadModulesPdf }
+
+
+ap_platform_about:
+    path:     home/About
+    defaults: { _controller: APPlatformBundle:Public:about }
+
+ap_platform_products_and_services:
+    path:     home/Products-and-services
+    defaults: { _controller: APPlatformBundle:Public:products }
+
+ap_platform_contact:
+    path:     home/Contact
+    defaults: { _controller: APPlatformBundle:Public:contact }
+
+ap_platform_purge:
+    path:     home/purge/{days}
+    defaults: { _controller: APPlatformBundle:Test:purge }
+
+ap_platform_view:
+    path:     home/advert/{id}
+    defaults: { _controller: APPlatformBundle:Advert:view }
+    requirements:
+        id: \d+
+
+ap_platform_add:
+    path:     home/advert/add
+    defaults: { _controller: APPlatformBundle:Advert:add }
+
+ap_platform_edit:
+    path:     home/edit/{id}
+    defaults: { _controller: APPlatformBundle:Advert:edit }
+    requirements:
+        id: \d+
+
+ap_platform_delete:
+    path:     home/delete/{id}
+    defaults: { _controller: APPlatformBundle:Advert:delete }
+    requirements:
+        id: \d+
+
+ap_platform_view_slug:
+    path:     home/{year}/{slug}.{_format}
+    defaults: { _controller: APPlatformBundle:Advert:viewSlug, _format: html }
+    requirements:
+        year: \d{4}
+        _format: html|xml
+        
+tokevote:
+    path:     home/tokevote
+    defaults: { _controller: APPlatformBundle:Extra:tokevote }
+
+nakevote:
+    path:     home/nakevote
+    defaults: { _controller: APPlatformBundle:Extra:nakevote }        
+

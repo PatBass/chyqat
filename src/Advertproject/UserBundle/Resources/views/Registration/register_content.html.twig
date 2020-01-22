@@ -1,0 +1,104 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="container-fluid" style="position: relative; top: 50px;">
+    <div class="row" style="margin-bottom: 50px;">
+
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-3 col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-body" id="panel-body-sign-in">
+                    <div class="row" >
+                        <div class="col-sm-10 col-sm-offset-1 alert alert-danger" style="text-align: center;border: 1px solid crimson;display: none;">
+                            {#{% if error %}#}
+                            <button type="button" data-toggle="tooltip" data-placement="top" title="Close" class="close" data-dismiss="alert">&times;</button>
+                            <div id="errorForm">{{ form_errors(form) }}</div>
+                            {#{% endif %}#}
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1" style="text-align: center;">
+                            <p style="color: lightblue;"><i class="glyphicon glyphicon-registration-mark"></i> Registration</p>
+                        </div>
+                        <form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+                            <div class="modal-body">
+                                <div id="fos_user_registration_form">
+                                    <div class="form-group" style="color: red;">
+                                        <input type="text" class="form-control" id="fos_user_registration_form_companyName" placeholder="Company Name" name="fos_user_registration_form[companyName]" required="required" maxlength="255" pattern=".{2,}" />
+                                        {{ form_errors(form.companyName) }}
+                                    </div>
+                                    <div class="form-group" style="color: red;">
+                                        <input type="email" class="form-control" id="fos_user_registration_form_email" placeholder="Email" name="fos_user_registration_form[email]" required="required" />
+                                        {{ form_errors(form.email) }}
+                                    </div>
+                                    <div class="form-group" style="color: red;">
+                                        <input type="tel" class="form-control" id="fos_user_registration_form_phone" placeholder="Please make sure your phone country code is provided. e.g.: 001 404 90711247. Only digits are accepted." name="fos_user_registration_form[phone]" required="required" maxlength="255" pattern=".{2,}" />
+                                        {{ form_errors(form.phone) }}
+                                    </div>
+                                    <div class="form-group" style="color: red;">
+                                        <input type="password" class="form-control" id="fos_user_registration_form_plainPassword_first" placeholder="Password" name="fos_user_registration_form[plainPassword][first]" required="required" />
+                                        {{ form_errors(form.plainPassword) }}
+                                    </div>
+                                    <div class="form-group" style="color: red;">
+                                        <input class="form-control" type="password" id="fos_user_registration_form_plainPassword_second" placeholder="Type in your password again" name="fos_user_registration_form[plainPassword][second]" required="required" />
+                                    </div>
+                                    <div class="form-group" style="color: red;">
+                                        <textarea type="tel" class="form-control" id="fos_user_registration_form_details" placeholder="Please insert the name of the person in charge and other details" name="fos_user_registration_form[details]" required="required" maxlength="255" pattern=".{2,}"></textarea>
+                                        {{ form_errors(form.details) }}
+                                    </div>
+                                    <div class="form-group" style="color: lightblue;">
+                                        <div class="col-sm-12">
+                                            {{ form_label(form.image, "Add Company Logo:", {'label_attr':{'class':'col-sm-6 control-label'}}) }}
+                                            <p style="color: red;">{{ form_errors(form.image) }}</p>
+                                            <div class="row"><br>
+                                                <div class="col-sm-12 form-group form-inline">
+                                                    {{ form_widget(form.image) }}
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="color: lightblue;">
+                                        <div class="col-sm-12">
+                                            {{ form_label(form.type, "Registering as:", {'label_attr':{'class':'col-sm-3 control-label'}}) }}
+                                            {{ form_errors(form.type) }}
+                                            <div class="row"><br>
+                                                <div class="col-sm-12 form-group form-inline">
+                                                    {{ form_widget(form.type) }}
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    {{ form_row(form._token) }}
+                                </div>
+                                <div>
+                                    <input type="submit" class="form-control btn btn-primary" value="{{ 'registration.submit'|trans }}" />
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+
+</div>
+
+<script src="{{ asset('bundles/applatform/js/tooltip.js') }}"></script>
+<script type='text/javascript'>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        if($('#errorForm').is(':empty')){
+            $(".alert").hide();
+        }
+        $(".close").click(function() {
+            $(".alert").hide("slow");
+        });
+    });
+
+</script>
+

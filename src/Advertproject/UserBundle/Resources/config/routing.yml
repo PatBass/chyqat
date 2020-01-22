@@ -1,0 +1,21 @@
+admin:
+    pattern: /admin
+    defaults : { _controller: APUserBundle:Admin:admin }
+
+ap_user_delete:
+    pattern: /delete/{id}
+    defaults : { _controller: APUserBundle:Admin:delete }
+    requirements:
+        id: \d+
+
+ap_user_deactivate:
+    pattern: /lock-account/{id}
+    defaults : { _controller: APUserBundle:Admin:deactivate }
+    requirements:
+        id: \d+
+
+ap_user_activate:
+    pattern: /enable-account/{id}
+    defaults : { _controller: APUserBundle:Admin:activate }
+    requirements:
+        id: \d+

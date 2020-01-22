@@ -1,0 +1,377 @@
+#user_area{
+    position: relative;
+    top:20px;
+}
+
+#menu-wrapper{
+    position: relative;
+    top:20px;
+}
+
+#header{
+    border-bottom: 1px solid #204056;
+    box-shadow: 0px 1px 10px #204056;
+    z-index: 9999;
+    color: white;
+}
+
+#header a {
+    font-weight: bold;
+    color: white;
+}
+
+#header .active a{
+    border-bottom: 3px solid #f58222;
+    color: #f58222;
+    /*color: #da251c;*/
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 40px;
+}
+
+#header .navbar-nav>li>a:hover {
+    color: #f58222;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* Home Page */
+
+.styledLine {
+    border: 0;
+    border-radius: 100%;
+    height: 2px;
+    -webkit-height: 10px;
+    background-image: linear-gradient(to right, rgba(245, 130, 34, 1), rgba(245, 130, 34, 0.35), rgba(245, 130, 34, 0.2), rgba(245, 130, 34, 0.35), rgba(245, 130,34, 1));
+}
+
+.panel-heading{
+    text-align: center;
+}
+
+.panel-heading img{
+    width: 99.8%;
+    height: 180px;
+}
+
+.panel-body-home{
+    height: 40px;
+    color: green;
+}
+
+.panel-body-home h5 {
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+.heading-colored{
+    color: green;
+    text-align: center;
+}
+
+.laptop img{
+
+}
+
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+    height: 200px;
+    border-radius: 0;
+}
+
+.thumbnail img{
+    height: 100px;
+}
+
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(90, 90, 90, 0.75);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align: center;
+    color:#fff !important;
+    z-index:2;
+}
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+
+#wrapper {
+    padding-bottom: 0;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+
+    animation: animatedBackground 40s linear infinite;
+
+}
+
+
+/* Sign In Page */
+
+#panel-body-sign-in{
+    border: 1px solid black;
+    background-color: #204056;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px black;
+}
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    background-color: #204056;
+}
+
+body{
+    margin: 0;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(237, 237, 237));
+    background-image:-webkit-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(250, 250, 250), rgb(237, 237, 237));
+    background-image:-moz-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(250, 250, 250), rgb(237, 237, 237));
+    background-image:-ms-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(250, 250, 250), rgb(237, 237, 237));
+    background-image:-o-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(250, 250, 250), rgb(237, 237, 237));
+    background-repeat: no-repeat;
+}
+
+/* About Page */
+.tf-about {
+    padding: 80px 0;
+    margin: 0;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(237, 237, 237));
+    background-image:-webkit-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(250, 250, 250), rgb(237, 237, 237));
+    background-image:-moz-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(250, 250, 250), rgb(237, 237, 237));
+    background-image:-ms-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(250, 250, 250), rgb(237, 237, 237));
+    background-image:-o-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgb(250, 250, 250), rgb(237, 237, 237));
+    background-repeat: no-repeat;
+}
+
+#image-salutation {
+    left:10%;
+    top:100px;
+}
+
+#image-entreprise {
+    left:10%;
+    top:40px;
+}
+
+#image-equipe {
+    left:10%;
+    top:30px;
+}
+
+#conseil {
+    left:10%;
+
+}
+
+.about-items {
+    margin-bottom: 80px;
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text, .section-title {
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: #5a5a5a;
+}
+
+.section-title{
+    text-transform: uppercase;
+}
+
+.section-title hr{
+    width: 60px;
+    height: 4px;
+    background-color: #f58222;
+
+
+
+}
+
+
+/* CONTACT PAGE */
+
+.whiteBorders img{
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 0px 115px lightgrey;
+    margin-bottom: 60px;
+}
+
+.marginBottom25px {
+    margin-bottom: 25px;
+}
+
+.marginTop50px {
+    margin-top: 50px;
+}
+
+#contact input, #contact textarea {
+    background-color: #f58222;
+}
+
+
+/* Social media icons in the body of home page */
+.social-slide {
+    background-image: url('../images/facebook-hover.png');
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    float: left;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+.social-slide:hover {
+    background-position: 0px -48px;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+}
+
+
+.icon-facebook:before {
+    content: "\e86f";
+}
+.icon-facebook-sign:before {
+    content: "\e736";
+}
+.icon-facebook2:before {
+    content: "\e74d";
+}
+.icon-line2-social-facebook:before {
+    content: "\e00b";
+}
+.si-sticky.si-sticky-right {
+    left: auto;
+    right: 8px;
+}
+.si-sticky {
+    position: fixed;
+    top: 50%;
+    left: 5px;
+    width: 36px;
+    z-index: 100;
+}
+
+.social-icon {
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.si-facebook:hover, .si-colored.si-facebook {
+    background-color: #3B5998 !important;
+}
+
+.si-colored.social-icon {
+    border-color: transparent;
+}
+
+.bounceInRight {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+}
+
+.animated {
+    opacity: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.si-colored {
+    border-color: transparent !important;
+}
+
+
+.social-icon {
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.si-facebook:hover, .si-colored.si-facebook {
+    background-color: #3B5998 !important;
+}
+.si-colored.social-icon {
+    border-color: transparent;
+}
+.bounceInRight {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+}
+.animated {
+    opacity: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.si-colored {
+    border-color: transparent !important;
+}
+.social-icon {
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 38px !important;
+    color: #555;
+    text-shadow: none;
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.social-icon {
+    display: block;
+    float: left;
+    margin: 4px 11px 7px 0;
+    text-align: center !important;
+    font-size: 28px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    cursor: pointer;
+    font-style: normal;
+}
+
+/* popout social media icons */
+.social-popout {
+    height: 48px;
+    width: 48px;
+    margin: 10px;
+    float: left;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+.social-popout img {
+    border-radius: 50%;
+    margin: 8px;
+    width: 100%;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+.social-popout img:hover {
+    margin: 0px;
+    box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);
+}
